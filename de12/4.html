@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head><link rel="stylesheet" href="./css/style.css">
+    <!-- ⑥↓タイトルを変えてみよう -->
+    <title>ゲーム作成</title>
+    <!-- ⑤スタイルシートの設定をしよう -->
+    <!-- h1.htmlからある行をコピペしてくればOK -->
+</head>
+<body>
+    <h1>ゲーム作成</h1>
+    <!-- 塊ごとにdivタグで区切るようにしましょう。 -->
+    <div>
+         <div>
+            <br>
+
+        <h1>不思議な世界からの脱出？ゲーム</h3>
+        このゲームは、あなたが不思議な世界に迷い込んでしまい、脱出しようとするオリジナルのゲームです。<br>
+        <br>
+
+        以下、ソースコード<br>
+        <br>
+       
+        <pre><code>001: print(&quot;※選択肢は半角数字で記入してください&quot;)
+002: 
+003: #ストーリー１
+004: 
+005: print(&quot;どうやらあなたは不思議な世界に迷い込んでしまったようです。&quot;)
+006: print(&quot;ひとまず前に進んでみましょう。&quot;)
+007: while True:
+008:     tsugie = input(&quot;進む。1と入力してください&quot;)
+009: 
+010:     if tsugie == &quot;1&quot;:
+011:         break
+012:     else:
+013:         print(&quot;1を入力してください&quot;)
+014: 
+015: print(&quot;(不気味な場所だな...)&quot;)
+016: print(&quot;ﾄｺﾄｺﾄｺﾄｺ...&quot;)
+017: print(&quot;(人影が見えるぞ...)&quot;)
+018: print(&quot;あなたはその人に話しかけてみることにしました。&quot;)
+019: while True:
+020:     tsugie = input(&quot;話しかける。1と入力してください&quot;)
+021: 
+022:     if tsugie == &quot;1&quot;:
+023:         break
+024:     else:
+025:         print(&quot;1を入力してください&quot;)
+026: 
+027: print(&quot;あなた「こんにちは」&quot;)
+028: print(&quot;謎の人「コノセカイノオオカミハヒツジノカワヲカブッテイル」&quot;)
+029: print(&quot;謎の人はそれだけ言って、どこかへ行ってしまいました。&quot;)
+030: print(&quot;(どういう意味...?)&quot;)
+031: print(&quot;あなたはとりあえず前に進んでみることにしました。&quot;)
+032: while True:
+033:     tsugie = input(&quot;進む。1と入力してください&quot;)
+034: 
+035:     if tsugie == &quot;1&quot;:
+036:         break
+037:     else:
+038:         print(&quot;1を入力してください&quot;)
+039: 
+040: print(&quot;ﾄｺﾄｺﾄｺﾄｺ...&quot;)
+041: print(&quot;あなたはいつに間にか不気味な森に来たようです。&quot;)
+042: print(&quot;（お腹空いたな...）&quot;)
+043: print(&quot;(あれ、これはなんだろう...？)&quot;)
+044: print(&quot;あなたは毒々しい色をした謎の実を見つけ、枝からもぎ取りました。&quot;)
+045: print(&quot;これどうしようかな。お腹空いてるし...でも見た目が毒々しいし...&quot;)
+046: print(&quot;あなたはその実を...&quot;)
+047: print(&quot;1.食べる&quot;)
+048: print(&quot;2.捨てる&quot;)
+049: while True:
+050:     a = input(&quot;あなた「&quot;)
+051: 
+052:     if a == &quot;1&quot; or a == &quot;2&quot;:
+053:         break
+054:     else:
+055:         print(&quot;1か2を入力してください&quot;)
+056: 
+057: if a==&quot;1&quot;:
+058:     print(&quot;あなた「あれっ、体が...」&quot;)
+059:     while True:
+060:         tsugie = input(&quot;次へ。1と入力してください&quot;)
+061: 
+062:         if tsugie == &quot;1&quot;:
+063:             break
+064:         else:
+065:             print(&quot;1を入力してください&quot;)
+066: 
+067:     print(&quot;あなた「なんか元気出てきた‼︎‼︎」&quot;)
+068:     print(&quot;あなたが食べた実は、元気の出る不思議な実であったようです。&quot;)
+069:     print(&quot;もっと先へ進んでみましょう。&quot;)
+070:     while True:
+071:         tsugie = input(&quot;進む。1と入力してください&quot;)
+072: 
+073:         if tsugie == &quot;1&quot;:
+074:             break
+075:         else:
+076:             print(&quot;1を入力してください&quot;)
+077: 
+078: 
+079: elif a==&quot;2&quot;:
+080:     print(&quot;ポイッ&quot;)
+081:     print(&quot;あれ、なんだか辺りが騒がしくなってきた...&quot;)
+082:     while True:
+083:         tsugie = input(&quot;次へ。1と入力してください&quot;)
+084: 
+085:         if tsugie == &quot;1&quot;:
+086:             break
+087:         else:
+088:             print(&quot;1を入力してください&quot;)
+089:     print(&quot;どうやらあなたは森の精霊の逆鱗に触れてしまったようです。&quot;)
+090:     print(&quot;あなたは次第に意識が遠のいていきました。&quot;)
+091:     while True:
+092:         tsugie = input(&quot;次へ。1と入力してください&quot;)
+093: 
+094:         if tsugie == &quot;1&quot;:
+095:             break
+096:         else:
+097:             print(&quot;1を入力してください&quot;)
+098:     print(&quot;気がつくと、そこは見慣れた景色。&quot;)
+099:     print(&quot;(あっ。自分の部屋だ。さっきのは夢だったのか...)&quot;)
+100:     print(&quot;あなたはベッドに寝ている自分を見下ろしながら、そう思うのでした。&quot;)
+101:     print(&quot;おわり&quot;)
+102:     exit()
+103: 
+104: 
+105: #ストーリー２
+106: 
+107: print(&quot;しばらく歩くと、突然草むらの中から何かが飛び出してきました。&quot;)
+108: print(&quot;「うわぁ‼︎」&quot;)
+109: print(&quot;現れたのは、犬のような生き物でした。&quot;)
+110: print(&quot;しかしよく見ると、少し変わった生き物のようです。&quot;)
+111: print(&quot;(なんだか不思議な生き物。だけど目がキュルキュルしてて子犬みたいで可愛いんだよな...)&quot;)
+112: print(&quot;あなたはいつの間にかその謎の生き物に夢中になっていました。&quot;)
+113: while True:
+114:     tsugie = input(&quot;次へ。1と入力してください&quot;)
+115: 
+116:     if tsugie == &quot;1&quot;:
+117:         break
+118:     else:
+119:         print(&quot;1を入力してください&quot;)
+120: 
+121: print(&quot;謎の生き物「クーン...」&quot;)
+122: print(&quot;どうやらその謎の生き物は、ものすごくお腹が空いているようです。&quot;)
+123: print(&quot;あなたはポケットにお菓子が入っているのを思い出しました。&quot;)
+124: print(&quot;その謎の生き物に見せてみると、とても食べたそうにしています。&quot;)
+125: print(&quot;(これをあげたら、仲良くなれるかも...)&quot;)
+126: print(&quot;あなたはこのお菓子を...&quot;)
+127: print(&quot;1.あげる&quot;)
+128: print(&quot;2.無視して先に進む&quot;)
+129: while True:
+130:     b = input(&quot;あなた「&quot;)
+131: 
+132:     if b == &quot;1&quot; or b == &quot;2&quot;:
+133:         break
+134:     else:
+135:         print(&quot;1か2を入力してください&quot;)
+136: 
+137: 
+138: if b==&quot;2&quot;:
+139:     print(&quot;なんだか不気味なので、謎の生き物を背に、あなたは鼻歌を歌いながら前へ進みます。&quot;)
+140:     print(&quot;やはり謎の生き物が気になってしまい、後ろを振り返ってみました...&quot;)
+141:     while True:
+142:         tsugie = input(&quot;振り返る。1と入力してください&quot;)
+143: 
+144:         if tsugie == &quot;1&quot;:
+145:            break
+146:         else:
+147:            print(&quot;1を入力してください&quot;)
+148: 
+149:     print(&quot;(あれ、眠ってる。)&quot;)
+150:     print(&quot;謎の生き物は、あなたの鼻歌に聞き入って眠ってしまったようです。&quot;)
+151:     print(&quot;(なんだ。やっぱり可愛いやつだったな。)&quot;)
+152:     print(&quot;そんなことを思いながら、あなたはもっと先へ進んでいきます。&quot;)
+153:     while True:
+154:          tsugie = input(&quot;進む。1と入力してください&quot;)
+155:     
+156:          if tsugie == &quot;1&quot;:
+157:             break
+158:          else:
+159:             print(&quot;1を入力してください&quot;)
+160: 
+161: elif b==&quot;1&quot;:
+162:     print(&quot;謎の生き物はすごく満足したようです。&quot;)
+163:     print(&quot;(あれ...)&quot;)
+164:     while True:
+165:         tsugie = input(&quot;次へ。1と入力してください&quot;)
+166: 
+167:         if tsugie == &quot;1&quot;:
+168:              break
+169:         else:
+170:             print(&quot;1を入力してください&quot;)
+171: 
+172:     print(&quot;（なんだか目つきが鋭くなってきたような...）&quot;)
+173:     print(&quot;その謎の生き物は、お菓子だけでは全然物足りなかったようです。&quot;)
+174:     print(&quot;あなたはいつに間にか、その生き物に飲み込まれていました。&quot;)
+175:     while True:
+176:         tsugie = input(&quot;次へ。1と入力してください&quot;)
+177: 
+178:         if tsugie == &quot;1&quot;:
+179:               break
+180:         else:
+181:               print(&quot;1を入力してください&quot;)
+182: 
+183:     print(&quot;気がつくと、そこは見慣れた景色。&quot;)
+184:     print(&quot;(あっ。自分の部屋だ。さっきのは夢だったのか...)&quot;)
+185:     print(&quot;あなたはベッドに傷だらけで横たわる自分を見下ろしながら、そう思うのでした。&quot;)
+186:     print(&quot;おわり&quot;)  
+187:     exit()  
+188: 
+189: 
+190: #ストーリー３
+191: 
+192: print(&quot;しばらく歩くと、村のようなものが見えてきました。&quot;)
+193: print(&quot;（人の声が聞こえる）&quot;)
+194: print(&quot;あなたはその村に行ってみることにしました。&quot;)
+195: print(&quot;ﾄｺﾄｺﾄｺﾄｺ&quot;)
+196: print(&quot;村の入り口に村人がいました。話しかけてみましょう。&quot;)
+197: 
+198: while True:
+199:     tsugie = input(&quot;話しかける。1と入力してください&quot;)
+200: 
+201:     if tsugie == &quot;1&quot;:
+202:         break
+203:     else:
+204:         print(&quot;1を入力してください&quot;)
+205: 
+206: print(&quot;あなた「こんにちは」&quot;)
+207: print(&quot;村人「◎△＄♪×￥○＆％＃？！◎△＄♪×￥○＆％＃？！」&quot;)
+208: print(&quot;(何言ってるかわからない。けど笑顔で出迎えてくれてる気がする。）&quot;)
+209: print(&quot;あなたは中へ入ってみることにしました。&quot;)
+210: 
+211: while True:
+212:     tsugie = input(&quot;次へ。1と入力してください&quot;)
+213: 
+214:     if tsugie == &quot;1&quot;:
+215:         break
+216:     else:
+217:         print(&quot;1を入力してください&quot;)
+218: 
+219: print(&quot;あなたは沢山の村人に歓迎されているようです。&quot;)
+220: print(&quot;あなたは村長のお家にお邪魔することにしました。&quot;)
+221: print(&quot;食卓には沢山の美味しそうな果物や料理が。&quot;)
+222: print(&quot;そしてお風呂や寝る場所まで用意してくれているようです。&quot;)
+223: print(&quot;(もう、日は暮れちゃったし、なんだか外は不気味だし、歩き疲れちゃったな...)&quot;)
+224: print(&quot;あなたは...&quot;)
+225: print(&quot;1.この家で一晩過ごす&quot;)
+226: print(&quot;2.早く帰りたいので家を出る&quot;)
+227: while True:
+228:     c = input(&quot;あなた「&quot;)
+229: 
+230:     if c== &quot;1&quot; or c == &quot;2&quot;:
+231:         break
+232:     else:
+233:         print(&quot;1か2を入力してください&quot;)
+234: 
+235: if c==&quot;1&quot;:
+236:     print(&quot;あなたは沢山の豪華な料理を振る舞ってもらいました。&quot;)
+237:     print(&quot;(すっごく美味しいな)&quot;)
+238:     print(&quot;あなたは食べるのに夢中になっていました。&quot;)
+239: 
+240:     while True:
+241:        tsugie = input(&quot;次へ。1と入力してください&quot;)
+242: 
+243:        if tsugie == &quot;1&quot;:
+244:            break
+245:        else:
+246:             print(&quot;1を入力してください&quot;)
+247: 
+248:     print(&quot;気がつくとあなたは村の真ん中で拘束されていました。&quot;)
+249:     print(&quot;なんとこの村の人たちは人喰い人種であったようです。&quot;)
+250:     print(&quot;(村人のあの笑顔はそういう意味だったのか...)&quot;)
+251:     print(&quot;あなたはこの後...&quot;)
+252: 
+253:     while True:
+254:         tsugie = input(&quot;次へ。1と入力してください&quot;)
+255: 
+256:         if tsugie == &quot;1&quot;:
+257:              break
+258:         else:
+259:              print(&quot;1を入力してください&quot;)
+260: 
+261:     print(&quot;気がつくと、そこは見慣れた景色。&quot;)
+262:     print(&quot;(あっ。自分の部屋だ。さっきのは夢だったのか...)&quot;)
+263:     print(&quot;あなたはベッドに横たわる痛々しい自分を見下ろしながら、そう思うのでした。&quot;)
+264:     print(&quot;おわり&quot;)
+265:     exit()
+266: 
+267:     
+268: 
+269: elif c==&quot;2&quot;:
+270:     print(&quot;やっぱり少しでも早く帰るべきだと思ったあなたは、村を出ました。&quot;)
+271:     print(&quot;先へ進みましょう。&quot;)
+272: 
+273:     while True:
+274:         tsugie = input(&quot;進む。1と入力してください&quot;)
+275: 
+276:         if tsugie == &quot;1&quot;:
+277:             break
+278:         else:
+279:             print(&quot;1を入力してください&quot;)
+280: 
+281:     print(&quot;(なんだか後ろが騒がしいような...)&quot;)
+282:     print(&quot;後ろに振り返ると、さっきの村人が武器を持ってあなたを追いかけて来ていました。&quot;)
+283:     print(&quot;あなたは必死に逃げます。&quot;)
+284:     print(&quot;(やばいっ、追いつかれそうっ...)&quot;)
+285: 
+286:     while True:
+287:         tsugie = input(&quot;次へ。1と入力してください&quot;)
+288: 
+289:         if tsugie == &quot;1&quot;:
+290:             break
+291:         else:
+292:           print(&quot;1を入力してください&quot;)
+293:     
+294:     print(&quot;気がつくと、そこは見慣れた景色。&quot;)
+295:     print(&quot;(あっ。自分の部屋だ。さっきのは夢だったのか...)&quot;)
+296:     print(&quot;あなたは起き上がって、いつも通り朝の支度を始めました。&quot;)
+297:     print(&quot;おわり&quot;)
+298:     exit()</code></pre>
+    
+    
+    
+    
+    
+    
+    </div>
+                 <!-- ①↓に文字を書いてみよう -->
+
+         <!-- ②↓に画像（imagesフォルダにあるtest.png）を挿入してみよう -->
+          
+         
+         <!-- ③↓に箇条書きをしてみよう -->
+
+         <!-- ④↓に外部リンクを作ってみよう -->
+          <a href="index.html">デザイン演習Ⅰ・Ⅱトップページ</a><br>
+          <a href="../index.html">XBPトップページ</a><br>
+          
+
+    
+
+</body> 
+<title>nenekaのXBPのページ</title>
+</html>
